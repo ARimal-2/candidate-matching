@@ -313,7 +313,7 @@ const Home = () => {
                 <div className="flex gap-12 py-6 ">
                   <div className="flex-1 p-4 border rounded-lg shadow-sm justify-items-center text-center">
                       <svg
-                        className=""
+                        className="items-center"
                         width="18"
                         height="18"
                         viewBox="0 0 18 18"
@@ -343,10 +343,10 @@ const Home = () => {
               
                       </div>
                       </div>
-                      <div className=''></div>
+                      <div className='py-2 px-4'>
                        <button
                     type="button"
-                    className="flex py-2 items-center gap-2 mb-2 text-sm font-plusjakarta  text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:z-10 focus:ring-4 focus:ring-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                    className="flex  items-center gap-2 mb-2 text-sm font-plusjakarta  text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:z-10 focus:ring-4 focus:ring-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                   >
                     View all
                     <svg
@@ -364,6 +364,7 @@ const Home = () => {
                       />
                     </svg>
                   </button>
+                  </div>
                     </div>
                   <div className="flex-2 p-4 border rounded-lg shadow-sm justify-items-center text-center">
 
