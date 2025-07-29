@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 
 import CreateJobForm from './CreateForm';
+import Viewallbutton from '@/components/common/Viewallbutton';
 
 const initialJobs: Job[] = [
   {
@@ -249,7 +250,7 @@ const Home = () => {
                       : 'No deadline'}
                   </span>
                 </div>
-                <div className="flex py-6 gap-2 text-500 justify-between text-[#4E4B66]">
+                <div className="flex py-6 text-500 justify-between text-[#4E4B66]">
                   <div className="flex gap-1">
                     <svg
                       width="20"
@@ -291,7 +292,7 @@ const Home = () => {
                   </div>
                   <button
                     type="button"
-                    className="flex items-center gap-2 px-5 me-2 mb-2 text-sm font-plusjakarta  text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:z-10 focus:ring-4 focus:ring-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                    className="flex items-center gap-2 me-2 mb-2 text-sm font-plusjakarta  text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:z-10 focus:ring-4 focus:ring-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                   >
                     View all
                     <svg
@@ -310,64 +311,55 @@ const Home = () => {
                     </svg>
                   </button>
                 </div>
-                <div className="flex gap-12 py-6 ">
-                  <div className="flex-1 p-4 border rounded-lg shadow-sm justify-items-center text-center">
-                      <svg
-                        className="items-center"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 9C6.268 9 9 6.363 9 0C9 6.363 11.713 9 18 9C11.713 9 9 11.713 9 18C9 11.713 6.268 9 0 9Z"
-                          fill="#FF7614"
-                          stroke="#FF7614"
-                          stroke-width="1.5"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      Ai Review
-<div className='flex gap-3 pt-[33px]'>
-
-
-                      <div className="flex-1 p-4 border rounded-lg shadow-sm" >
-                          <div>
-                            <div>20</div> suggested</div>
-              
-                      </div>
-                         <div className="flex-2 p-4 border rounded-lg shadow-sm" >
-                          <div>20 rejected</div>
-                          
-              
-                      </div>
-                      </div>
-                      <div className='py-2 px-4'>
-                       <button
-                    type="button"
-                    className="flex  items-center gap-2 mb-2 text-sm font-plusjakarta  text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:z-10 focus:ring-4 focus:ring-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                  >
-                    View all
+                <div className="flex  ">
+                  <div className="flex-1  border p-3 rounded-lg shadow-sm justify-items-center text-center h-fit w-72">
                     <svg
-                      width="5"
-                      height="10"
-                      viewBox="0 0 5 10"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.82188 4.56208C4.93601 4.67626 5.00013 4.83108 5.00013 4.99252C5.00013 5.15396 4.93601 5.30878 4.82188 5.42295L1.37779 8.86704C1.32163 8.92519 1.25445 8.97157 1.18017 9.00348C1.10589 9.03539 1.026 9.05218 0.945164 9.05288C0.864325 9.05359 0.784156 9.03818 0.709335 9.00757C0.634513 8.97696 0.566537 8.93175 0.509373 8.87459C0.45221 8.81742 0.407003 8.74945 0.376391 8.67463C0.345779 8.5998 0.330375 8.51964 0.331078 8.4388C0.33178 8.35796 0.348575 8.27807 0.380483 8.20379C0.41239 8.12951 0.458771 8.06233 0.51692 8.00617L3.53057 4.99252L0.516919 1.97887C0.406018 1.86404 0.344653 1.71025 0.34604 1.55062C0.347427 1.39099 0.411456 1.2383 0.524335 1.12541C0.637215 1.01254 0.789915 0.948505 0.949545 0.947119C1.10918 0.945731 1.26296 1.0071 1.37779 1.118L4.82188 4.56208Z"
-                        fill="#262338"
+                        d="M0 9C6.268 9 9 6.363 9 0C9 6.363 11.713 9 18 9C11.713 9 9 11.713 9 18C9 11.713 6.268 9 0 9Z"
+                        fill="#FF7614"
+                        stroke="#FF7614"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
                       />
                     </svg>
-                  </button>
-                  </div>
+                Ai Review
+                    <div className="flex py-[25px] gap-3  h-fit">
+                      <div className="flex-2  p-4 border  rounded-[12px] shadow-sm  h-fit  w-[118px]">
+                        <div className="text-left ">
+                          <div className="text-[#1EB04C] ">20</div> Suggested
+                        </div>
+                        <div className="py-2">
+                          <Viewallbutton>
+                            <span>View </span>
+                          </Viewallbutton>
+                        </div>
+                      </div>
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm   w-[118px]">
+                        <div className="text-left ">
+                          <div className="text-[#ED5356]">30</div> Rejected
+                        </div>
+                        <div className="py-2 ">
+                          <Viewallbutton>
+                            <span>View </span>
+                          </Viewallbutton>
+                        </div>
+                      </div>
                     </div>
-                  <div className="flex-2 p-4 border rounded-lg shadow-sm justify-items-center text-center">
+                  </div>
+                  <div className="pt-12 pb-12 gap-2">
+                    <Separator
+                      decorative
+                      className="!w-[48px] !border-t-2 border-dashed text-[#D9DBE9] mx-auto"
+                    />
+                  </div>
 
+                  <div className="flex-2 p-3 border rounded-lg shadow-sm justify-items-center text-center h-fit  " >
                     <svg
                       width="20"
                       height="20"
@@ -381,9 +373,65 @@ const Home = () => {
                         fill="#FCFCFC"
                       />
                     </svg>
-                    CV Screening{' '}
+                    CV Screening
+                    <div className="flex flex-col gap-3 p-2  pt-[33px] ">
+                      {/* Top row: Suggested + Rejected */}
+                      <div className="flex gap-4">
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm h-fit  w-[118px]">
+                          <div className="text-left">
+                            <div className="text-[#1EB04C]">20</div> Selected
+                          </div>
+                          <div className="py-2">
+                            <Viewallbutton>
+                              <span>View </span>
+                            </Viewallbutton>
+                          </div>
+                        </div>
+
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm h-fit  w-[118px]">
+                          <div className="text-left">
+                            <div className="text-[#ED5356]">20</div> Rejected
+                          </div>
+                          <div className="py-2">
+                            <Viewallbutton>
+                              <span>View </span>
+                            </Viewallbutton>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-3">
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm h-fit  w-[118px]">
+                          <div className="text-left">
+                            <div className="text-[#FABC00]">20</div> Pending
+                          </div>
+                          <div className="py-2">
+                            <Viewallbutton>
+                              <span>View </span>
+                            </Viewallbutton>
+                          </div>
+                        </div>
+
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm h-fit  w-[118px]">
+                          <div className="text-left">
+                            <div>20</div> Hold On
+                          </div>
+                          <div className="py-2">
+                            <Viewallbutton>
+                              <span>View </span>
+                            </Viewallbutton>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex-3 p-4 border rounded-lg shadow-sm justify-items-center text-center" >
+                  <div className="pt-12 pb-12 gap-2">
+                    <Separator
+                      decorative
+                      className="!w-[48px] !border-t-2 border-dashed text-[#D9DBE9] mx-auto"
+                    />
+                  </div>
+                  <div className="flex-3 py-2 gap-6 border rounded-lg shadow-sm justify-items-center text-center  ">
                     <svg
                       width="20"
                       height="20"
@@ -398,8 +446,87 @@ const Home = () => {
                       />
                     </svg>
                     Interview Round
+                    <div className="flex flex-col gap-6 p-4 pt-[33px] h-fit  ">
+                      {/* Top row: Suggested + Rejected */}
+                      <div className="flex w-max gap-3 ">
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm h-fit w-[118px]  ">
+                          <div className="text-left">
+                            <div className="text-[#1EB04C]">20</div> Selected
+                          </div>
+                          <div className="py-2">
+                            <Viewallbutton>
+                              <span>View </span>
+                            </Viewallbutton>
+                          </div>
+                        </div>
+
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm h-fit  w-[118px]">
+                          <div className="text-left">
+                            <div className="text-[#ED5356]">20</div> Rejected
+                          </div>
+                          <div className="py-2">
+                            <Viewallbutton>
+                              <span>View </span>
+                            </Viewallbutton>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-3">
+                     
+   <div className="flex-2 p-4 border rounded-[12px] shadow-sm h-fit w-[118px]">
+  <div className="flex items-center justify-between">
+    <div className="text-left flex gap-2">
+      <div className=" text-[#FABC00]">20</div>
+      <div>Pending</div>
+    </div>
+    <Viewallbutton>
+      <span>View</span>
+    </Viewallbutton>
+</div>
+
+
+                         
+ <div className="flex items-center justify-between p-4  w-fit gap-6">
+  {/* Unscheduled */}
+  <div className="flex flex-col items-center text-center">
+    <div className="text-[#6E7191] text-[16px] font-medium">20</div>
+<div className="text-[12px] text-[#6E7191] whitespace-nowrap">Un-Scheduled</div>
+    <div className="pt-1">
+      <Viewallbutton>
+        <span>View</span>
+      </Viewallbutton>
+    </div>
+  </div>
+
+  {/* Vertical separator (no rotation needed) */}
+  <div className="w-px h-[48px] bg-gray-300" />
+
+  {/* Scheduled */}
+  <div className="flex flex-col items-center text-center">
+    <div className="text-[#6E7191] text-[16px] font-medium">20</div>
+    <div className="text-[12px] text-[#6E7191]">Scheduled</div>
+    <div className="pt-1">
+      <Viewallbutton>
+        <span>View</span>
+      </Viewallbutton>
+    </div>
+  </div>
+</div>
+
+
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex-3 p-4 border rounded-lg shadow-sm justify-items-center text-center">
+                  <div className="pt-12 pb-12 gap-2">
+                    <Separator
+                      decorative
+                      className="!w-[48px] !border-t-2 border-dashed border-[#D9DBE9] mx-auto"
+                    />
+                  </div>
+                  <div className="flex-3 p-4 border rounded-lg shadow-sm justify-items-center text-center h-fit w-fit">
                     <svg
                       width="20"
                       height="20"
@@ -414,6 +541,21 @@ const Home = () => {
                       />
                     </svg>
                     Hired
+                    <div className="flex flex-col gap-3 pt-[33px] h-max ">
+                      {/* Top row: Suggested + Rejected */}
+                      <div className="flex w-max gap-3">
+                      <div className="flex-2 p-4 border  rounded-[12px] shadow-sm h-fit  w-[118px]">
+                          <div className="text-left">
+                            <div className="text-[#1EB04C]">20</div> Selected
+                          </div>
+                          <div className="py-2">
+                            <Viewallbutton>
+                              <span>View </span>
+                            </Viewallbutton>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
