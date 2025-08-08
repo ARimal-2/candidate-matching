@@ -89,7 +89,7 @@ const CreateJobForm = ({ onSubmit }:Props) => {
   };
 
   return (
-    <SheetContent side="right" className="!w-[486px] !max-w-[486px]">
+    <SheetContent side="right" className="!w-[486px] gap-[22px] !max-w-[486px]">
       <div className="px-6 py-6 gap-6">
         <SheetHeader>
           <SheetTitle>Create Job Post</SheetTitle>
